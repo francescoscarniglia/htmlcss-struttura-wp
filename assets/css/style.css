@@ -7,11 +7,13 @@
 /* macro-sezioni verticali */
 
 #main-page {
-  height: 1200px;
+
   width: 80%;
   margin: auto;
   margin-top: 10px;
-  background-color: #d6d6d6;
+  /* background-color: #d6d6d6; */
+  position: relative;
+
 
 }
 
@@ -38,24 +40,24 @@
 /* Layout 3 blocchi */
 
 .col {
-  height: 800px;
+  height: 160vh;
+  width: 100%;
   float: left;
+  padding: 0px 10px;
 }
 
-.col-sx {
-  background-color: #c0c0c0;
+.col-sx-dx {
+
   width: calc(100%/4);
+
 }
 
 .col-2 {
-  background-color: #000080;
+
   width: calc(100%/2);
+
 }
 
-.col-dx {
-  background-color: yellow;
-  width: calc(100%/4);
-}
 
 
 /* blocchi-footer credits e social  */
@@ -87,6 +89,43 @@
 
 .col-3x:nth-child(3) {
   background: blue;
+}
+
+.sidebar {
+  background: green;
+}
+
+.sidebar,
+.box-small {
+  width: 100%;
+  height: 500px;
+  margin: 10px 0px;
+  border-radius: 10px;
+
+}
+.box-big {
+
+  background: #000080;
+  width: 100%;
+  height: 500px;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+
+.box-small:nth-child(1) {
+  background-color: orange;
+}
+
+.box-small:nth-child(2) {
+  background-color: blue;
+  height: 500px;
+  margin: 10px 0px;
+  border-radius: 10px;
+
+}
+
+.box-small:nth-child(3) {
+  background-color: green;
 }
 
 
