@@ -6,6 +6,16 @@
 
 /* macro-sezioni verticali */
 
+#main-page {
+  height: 1200px;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #d6d6d6;
+
+}
+
+
 #main-header {
   height: 400px;
   background: red;
@@ -17,20 +27,12 @@
   background: purple;
 }
 
-
-#main-page {
-  height: 1200px;
-  width: 80%;
-  margin: auto;
-  background-color: #d6d6d6;
-
-}
-
 #main-footer {
 
   height: 80px;
   width: 80%;
   margin: auto;
+  margin-bottom: 10px;
 }
 
 /* Layout 3 blocchi */
