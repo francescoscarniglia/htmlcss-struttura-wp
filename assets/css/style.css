@@ -58,6 +58,7 @@ h6
 /* Layout 3 blocchi main */
 .title-box {
   height: 60px;
+  padding:10px 10px;
 }
 
 .col {
