@@ -1,139 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto:400,700,900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
+body {
+  background-image: url('../img/bg.png');
+  font-family: 'Roboto', ;
+}
+
+/* titoli */
+h1,
+h2,
+h4,
+h5,
+h6
+{
+  font-family: 'Montserrat', sans-serif;
+}
 
 /* macro-sezioni verticali */
 
 #main-page {
-
-  width: 80%;
+    width: 70%;
   margin: auto;
   margin-top: 10px;
-  /* background-color: #d6d6d6; */
   position: relative;
-
-
 }
 
 
 #main-header {
-  height: 400px;
+  height: 500px;
   background: red;
   position: relative;
 }
 
 #img-header {
-  height: 320px;
-  background: purple;
+  height: 420px;
+  background: gray;
+  background-image: url('../img/banner.jpeg');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  border: 10px solid #fff;
 }
 
 #main-footer {
-
+  background: #fff;
   height: 80px;
-  width: 80%;
+  width: 70%;
   margin: auto;
   margin-bottom: 10px;
+
 }
 
-/* Layout 3 blocchi */
+/* Layout 3 blocchi main */
+.title-box {
+  height: 60px;
+}
 
 .col {
-
-  height: 160vh;
-  width: 100%;
   float: left;
-  padding: 0px 10px;
+  padding: 10px 20px;
 }
 
 .col-sx-dx {
-
   width: calc(100%/4);
-
 }
 
 .col-2 {
-
   width: calc(100%/2);
-
 }
 
-
-
-/* blocchi-footer credits e social  */
-#credits {
-  width: 100%;
-  height: 20px;
-  background: #008080;
+/* logo */
+.centered {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
 }
 
-#social
-{
-  width: 100%;
-  height: 60px;
-
+.centered img {
+  width: 600px;
 }
-
-.col-3x {
-  float: left;
-  height: 100%;
-  width: calc(100%/3);
-}
-
-.col-3x:nth-child(1) {
-  background: orange;
-}
-.col-3x:nth-child(2) {
-  background: red;
-}
-
-.col-3x:nth-child(3) {
-  background: blue;
-}
-
-.sidebar {
-  background: green;
-}
-
-.sidebar,
-.box-small {
-  width: 100%;
-  height: 500px;
-  margin: 10px 0px;
-  border-radius: 10px;
-
-}
-.box-big {
-
-  background: #000080;
-  width: 100%;
-  height: 500px;
-  margin: 10px 0px;
-  border-radius: 10px;
-}
-
-.box-small:nth-child(1) {
-  background-color: orange;
-}
-
-.box-small:nth-child(2) {
-  background-color: blue;
-  height: 500px;
-  margin: 10px 0px;
-  border-radius: 10px;
-
-}
-
-.box-small:nth-child(3) {
-  background-color: green;
-}
-
 
 /* Menù principale */
-
 #main-menu {
-  background: black;
+  background: DIMGRAY;
   width: 100%;
   height: 80px;
   color: #fff;
@@ -143,24 +100,153 @@
 }
 
 .menu-centered {
+  width: 100%;
   position: absolute;
   top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif ;
+
 }
 
 .menu-centered li {
   display: inline;
   font-weight: 900;
   text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.menu-centered a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-centered a:hover {
+  color: #d6d6d6;
+}
+
+/* sidebar */
+.sidebar {
+  background: #fff;
+  padding: 10px 5%;
+  margin: 10px 0px;
+
+}
+
+.link-aside {
+  color:green;
+  padding: 10px;
+}
+
+.item {
+  width: 100%;
+  padding: 10px 10px;
+
 }
 
 
-/* classe per ripulire gli elementi float */
+.link-aside:hover {
+  color:gray;
+}
+
+/* contenuto box centrale */
+.box-big {
+  padding: 10px 5%;
+  background: #fff;
+  width: 100%;
+  margin: 10px 0px;
+
+}
+
+.box-small {
+  padding: 10px 5%;
+  margin: 10px 0px 30px 0px;
+
+  background: #fff;
+}
+
+/* border radius */
+.sidebar,
+.box-big,
+.box-small,
+#main-footer {
+  border-radius: 5px;
+}
+
+
+/* blocchi-footer credits e social  */
+.col-3x {
+  float: left;
+  height: 100%;
+  width: calc(100%/3);
+}
+
+#credits {
+  width: 100%;
+  height: 20px;
+  color: #d6d6d6;
+  border-bottom: 2px solid #d6d6d6;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#social {
+  width: 100%;
+  height: 60px;
+
+}
+
+#social-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
+}
+
+#social-list li {
+  list-style: none;
+  float: left;
+  width: calc(100%/3);
+  padding: 10px 0;
+
+}
+
+
+/* icone fontawesome style */
+.fab {
+  color:#d6d6d6;
+}
+
+.fab:hover {
+  color:  gray;
+}
+
+.fa-rss-square {
+  float: left;
+  color:  orange;
+  margin-right: 10px;
+}
+
+
+
+/* utilities */
 
 .clearfix::after {
   content: " ";
   display: table;
   clear: both;
 
+}
+
+/* testo maiuscolo */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* paragrafo lead */
+.lead {
+  line-height: 30px;
+  font-size: 18px;
 }
